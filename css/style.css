@@ -256,6 +256,7 @@ nav a:hover {
 }
 
 .project-card {
+  position: relative;
   background: white;
   border-radius: var(--card-radius);
   overflow: hidden;
@@ -267,6 +268,28 @@ nav a:hover {
 .project-card:not(.disabled):hover {
   transform: translateY(-8px);
   box-shadow: 0 28px 35px -14px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:not(.disabled)::after {
+  content: "Click to view";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: rgba(15, 89, 108, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.project-card:not(.disabled):hover::after {
+  opacity: 1;
 }
 
 .disabled {
