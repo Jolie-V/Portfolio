@@ -57,9 +57,11 @@ const projectsData = {
     description: "This Web Application was created for my Undergraduate Capstone Project. CardZap is a web application that transforms PDF, Word, and text files into AI-generated flashcards. By parsing user-provided text or documents, the application automatically summarizes content and generates engaging, customizable study cards.",
     techStack: ["React 19", "Vite", "CSS", "TypeScript"],
     images: [
-      "assets/project2/1.jpg",
-      "assets/project2/2.jpg",
-      "assets/project2/3.jpg"
+      "assets/project2/1.png",
+      "assets/project2/2.png",
+      "assets/project2/3.png",
+      "assets/project2/4.png",
+      "assets/project2/5.png"
     ]
   }
 };
