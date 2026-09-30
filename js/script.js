@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash === '#projects') {
+    window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
+  }
+
   const container = document.getElementById('mosaic-container');
   const rows = 7;
   const cols = 12;

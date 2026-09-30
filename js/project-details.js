@@ -32,7 +32,7 @@ const projects = {
             "React, JavaScript, Supabase, Google Gemini API, HTML, CSS",
 
         live:
-            "YOUR_CARDZAP_URL"
+            "https://card-zap.vercel.app/#/guest/create"
 
     },
 
