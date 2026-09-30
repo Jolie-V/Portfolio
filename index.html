@@ -2,156 +2,529 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Adeline · Full Stack Portfolio</title>
-  <!-- Google Fonts & Bootstrap Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- External CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jolie_V</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+  <div id="mosaic-container"></div>
+
   <header class="navbar">
-    <a class="logo" href="#">Adeline</a>
-    <nav>
-      <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand header-logo" href="#">jolie_V</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active header-item" href="#about-me">/about_Me</a></li>
+            <li class="nav-item"><a class="nav-link active header-item" href="#projects">/projects</a></li>
+            <li class="nav-item"><a class="nav-link active header-item" href="#skills">/skills</a></li>
+            <li class="nav-item"><a class="nav-link active header-item" href="#contact">/contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <img class="profile-image" src="assets/profile.jpg" alt="Adeline profile" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23FFE75C%22/%3E%3Ctext x=%2250%22 y=%2267%22 text-anchor=%22middle%22 fill=%22%230F596C%22 font-size=%2240%22 font-family=%22Arial%22%3EA%3C/text%3E%3C/svg%3E'">
-        <h1>Adeline</h1>
-        <h2>Full Stack Web Dev | Fresh Graduate</h2>
-        <div class="hero-buttons">
-          <a href="https://drive.google.com/file/d/1sQUn83ecRxTNgmIZ-BHKUt9V4l0vb_0y/view?usp=sharing" class="btn" target="_blank">Resume</a>
-          <a href="#projects" class="btn">Projects</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="about-wrapper">
-        <div class="about-image">
-          <img src="assets/about-photo.jpg" alt="Adeline about" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%230F596C%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23FFE75C%22 font-size=%2224%22%3EAdeline%3C/text%3E%3C/svg%3E'">
-        </div>
-        <div class="about-content">
-          <div class="section-tag">About Me</div>
-          <div class="about-text">
-            <p>I'm a creative and analytical problem solver with hands-on experience as a full-stack student web developer, seeking to apply and further develop technical and problem-solving skills in the field of Information Technology. Passionate about building efficient digital solutions, learning emerging technologies, and contributing to innovative and collaborative work environments.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2 class="projects-title">My Projects</h2>
-      <div class="projects-grid">
-        <!-- Project 1: DOCUTRACK -->
-        <article class="project-card" data-project="project1">
-          <div class="carousel">
-            <img class="project-image" src="assets/project1/1.png">
-            <img class="project-image" src="assets/project1/2.png">
-            <img class="project-image" src="assets/project1/3.png">
-            <img class="project-image" src="assets/project1/4.png">
-            <img class="project-image" src="assets/project1/5.png">
-          </div>
-          <div class="project-info">
-            <h3>DOCUTRACK: Document Tracking System</h3>
-            <p>DocuTrack is a web-based document tracking system designed during my 3-month internship with LGU - Ligao City. It enables offices, departments, and partners to create, route, receive, accept, and monitor documents in a transparent, paper-less workflow with QR code scanning.</p>
-          </div>
-        </article>
-
-        <!-- Project 2: CardZap -->
-        <article class="project-card" data-project="project2">
-          <div class="carousel">
-            <img class="project-image" src="assets/project2/1.png">
-            <img class="project-image" src="assets/project2/2.png">
-            <img class="project-image" src="assets/project2/3.png">
-            <img class="project-image" src="assets/project2/4.png">
-            <img class="project-image" src="assets/project2/5.png">
-          </div>
-          <div class="project-info">
-            <h3>CardZap: AI-Powered File Converter Tool</h3>
-            <p>Undergraduate Capstone Project. CardZap transforms PDF, Word, and text files into AI-generated flashcards. It automatically summarizes content and generates customizable study cards for interactive learning.</p>
-          </div>
-        </article>
-
-        <!-- Coming Soon -->
-        <article class="project-card disabled">
-          <div class="carousel">
-            <img class="project-image" src="assets/coming-soon.jpg" alt="coming soon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 240%22%3E%3Crect width=%22400%22 height=%22240%22 fill=%22%23b9aa8f%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%230F596C%22 font-size=%2226%22 font-weight=%22bold%22 text-anchor=%22middle%22%3E⚡ COMING SOON%3C/text%3E%3C/svg%3E'">
-          </div>
-          <div class="project-info">
-            <h3>New Project</h3>
-            <p>More exciting projects are under development — stay tuned for modern AI tools.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="skills-container">
-        <div class="skills-card">
-          <h3><i class="bi bi-code-slash"></i> Technical Skills</h3>
-          <ul class="skills-list">
-            <li><i class="bi bi-filetype-html"></i> HTML5, CSS3, PHP, JavaScript, SQL</li>
-            <li><i class="bi bi-braces"></i> Java, Python, C++</li>
-            <li><i class="bi bi-bootstrap-fill"></i> Bootstrap, Tailwind, React 19, Vite, Node.js</li>
-            <li><i class="bi bi-database"></i> MySQL, PostgreSQL</li>
-            <li><i class="bi bi-wifi"></i> Cisco Packet Tracer, Git, Figma</li>
-          </ul>
-        </div>
-        <div class="skills-card">
-          <h3><i class="bi bi-people"></i> Professional Skills</h3>
-          <ul class="skills-list">
-            <li><i class="bi bi-lightbulb"></i> Problem Solving & Analytical Thinking</li>
-            <li><i class="bi bi-chat-dots"></i> Team Collaboration & Communication</li>
-            <li><i class="bi bi-calendar-check"></i> Time Management & Organization</li>
-            <li><i class="bi bi-arrow-repeat"></i> Adaptability & Continuous Learning</li>
-            <li><i class="bi bi-journal-check"></i> Technical Documentation & Detail Oriented</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Get in Touch!</h2>
-      <div class="contact-details">
-        <div class="contact-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:adelinejoliegomez@gmail.com">adelinejoliegomez@gmail.com</a></div>
-        <div class="contact-item"><i class="bi bi-telephone-fill"></i> +63 967 352 1649</div>
-        <div class="contact-item"><i class="bi bi-geo-alt-fill"></i> Philippines</div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal for project details -->
-  <div id="projectModal" class="modal">
-    <div class="modal-content">
-      <button id="closeModal">&times;</button>
-      <div id="modalCarousel"></div>
-      <div id="modalDescription"></div>
+  <section id="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Jolie_V</h1>
+      <p class="hero-subtitle">Full-Stack · IT Fresh Graduate</p>
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    © 2026 Adeline Jolie Gomez. All rights reserved.
-  </footer>
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Python</span><span>JavaScript</span><span>TypeScript</span>
+          <span>PHP</span><span>HTML</span><span>C++</span><span>Java</span>
+          <span>CSS</span>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>Python</span><span>JavaScript</span><span>TypeScript</span>
+          <span>PHP</span><span>HTML</span><span>C++</span><span>Java</span>
+          <span>CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- External JavaScript -->
+  <section id="about-me">
+    <div class="about-wrapper">
+      <div class="about-tabs">
+        <button class="about-tab active" data-tab="summary">/summary</button>
+        <button class="about-tab" data-tab="education">/education</button>
+        <button class="about-tab" data-tab="work">/work</button>
+      </div>
+
+      <div class="about-panel">
+        <div class="about-content active" id="summary">
+          <div class="about-text">
+            <h1>about_Me</h1>
+            <p>
+              I'm <span>Adeline Jolie Gomez</span>, a
+              <span>Cum Laude</span> Bachelor of Science in Information
+              Technology graduate with hands-on experience in
+              <span>web development, IT support, database systems,
+              and AI-powered applications.</span>
+            </p>
+            <p>
+              I enjoy <span>solving technical problems</span> and turning
+              ideas into <span>practical, user-focused solutions</span>,
+              with experience using technologies such as JavaScript,
+              PHP, React, Node.js, SQL, and modern development tools.
+            </p>
+            <p>
+              Through my academic projects and
+              <span>IT internship</span>, I have developed both
+              <span>technical and problem-solving skills</span> while
+              working with real users and real-world systems.
+              I'm eager to <span>continue learning, take on new
+              challenges, and contribute to meaningful technology
+              projects.</span>
+            </p>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/images/profile.jpg" alt="Profile">
+          </div>
+        </div>
+
+        <div class="about-content" id="education">
+          <div class="about-text">
+            <h1>education</h1>
+            <div class="education-school">
+              <strong>Bachelor of Science in Information Technology</strong>
+              - Bicol University Polangui
+            </div>
+            <div class="education-date">August 2022 - June 2026</div>
+            <ul>
+              <li>Graduated <strong>Cum Laude.</strong></li>
+              <li><strong>President's Lister</strong> – AY 2022-2023, First Semester</li>
+              <li><strong>Dean's Lister</strong> – AY 2022-2023, Second Semester to AY 2025-2026</li>
+              <li>Served as <strong>Block President</strong> for four years.</li>
+              <li><strong>Public Information Officer</strong> of the Tech Systems Association.</li>
+              <li>Member of the Communications Team, <strong>Google Developer Groups on Campus Bicol University.</strong></li>
+              <li>Served as <strong>Cartoonist, Photojournalist, and Arts &amp; Graphics Editor</strong> for the college publication – AY 2022-2023 to AY 2025-2026.</li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/images/graduation.jpg" alt="Graduation">
+          </div>
+        </div>
+
+        <div class="about-content" id="work">
+          <div class="about-text">
+            <h1>work_Experience</h1>
+            <div class="work-heading">
+              <strong>IT Intern</strong> - Local Government Unit - Ligao City
+            </div>
+            <div class="work-date">February 2026 - May 2026</div>
+            <ul>
+              <li>
+                Developed a <strong>web-based document tracking system</strong>
+                using <strong>PHP and PostgreSQL</strong> to support
+                document routing, receiving, acceptance, and monitoring
+                across offices and departments.
+              </li>
+              <li>
+                Implemented <strong>QR code-based document tracking</strong>
+                to improve the identification and monitoring of
+                documents within the workflow.
+              </li>
+              <li>
+                Collaborated with a fellow intern to implement
+                <strong>10+ system revisions within one week</strong>
+                under a tight deadline. Presented version 1.0 of the
+                document tracking system to the
+                <strong>City Mayor and department heads.</strong>
+              </li>
+              <li>
+                Provided technical support to
+                <strong>20+ staff members</strong>, troubleshooting
+                <strong>hardware, software, and local network
+                connectivity issues.</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/images/internship.jpeg" alt="IT Internship">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-wrapper">
+      <h1 class="section-title">projects</h1>
+
+      <div class="projects-grid">
+        <article class="project-card" data-project="cardzap" tabindex="0">
+          <div class="project-image">
+            <img src="assets/images/cardzap/5.png" alt="CardZap project">
+          </div>
+          <div class="project-info">
+            <h2>CardZap: An AI-powered File Converter Tool for Interactive Learning</h2>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Supabase</span>
+              <span>AI</span>
+            </div>
+            <p>
+              An AI-powered web application that transforms PDF,
+              Word, and text files into interactive flashcards using
+              Google Gemini API. Used ChatGPT and DeepSeek to assist
+              with development, troubleshooting, research, and prompt
+              refinement to improve AI generated content.
+            </p>
+            <a href="https://card-zap.vercel.app/#/login" class="live-link" target="_blank" rel="noopener noreferrer">
+              ↗ View Live Page
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="docutrack" tabindex="0">
+          <div class="project-image">
+            <img src="assets/images/docutrack/1.png" alt="DocuTrack project">
+          </div>
+          <div class="project-info">
+            <h2>DocuTrack</h2>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>PostgreSQL</span>
+              <span>QR Code</span>
+            </div>
+            <p>
+              A web-based document tracking system developed during
+              an IT internship to support document routing, receiving,
+              acceptance, and monitoring across offices and departments.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="shopfootas" tabindex="0">
+          <div class="project-image">
+            <img src="assets/images/shopfootas.jpg" alt="ShopFootas project">
+          </div>
+          <div class="project-info">
+            <h2>ShopFootas</h2>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <p>
+              An e-commerce web application developed as a final
+              academic project for browsing and purchasing shoes,
+              featuring database-driven product management and
+              user-focused shopping functionality.
+            </p>
+            <a href="YOUR_SHOPFOOTAS_URL" class="live-link" target="_blank" rel="noopener noreferrer">
+              ↗ View Live Page
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+
+      <div class="skills-container">
+
+          <!-- =========================
+              TECHNICAL SKILLS
+          ========================== -->
+
+          <div class="skills-group">
+
+              <h1 class="skills-title">
+                  technical skills
+              </h1>
+
+
+              <!-- Programming Languages -->
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Programming Languages
+                  </div>
+
+                  <div class="skill-tags">
+
+                      <span>Java</span>
+                      <span>C++</span>
+                      <span>Python</span>
+
+                  </div>
+
+              </div>
+
+
+              <!-- Web Development -->
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Web Development
+                  </div>
+
+                  <div class="skill-tags">
+
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                      <span>PHP</span>
+                      <span>React</span>
+                      <span>Node.js</span>
+                      <span>Bootstrap</span>
+
+                  </div>
+
+              </div>
+
+
+              <!-- Database -->
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Database
+                  </div>
+
+                  <div class="skill-tags">
+
+                      <span>MySQL</span>
+                      <span>PostgreSQL</span>
+                      <span>Supabase</span>
+
+                  </div>
+
+              </div>
+
+
+              <!-- Tools -->
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Tools
+                  </div>
+
+                  <div class="skill-tags">
+
+                      <span>Figma</span>
+                      <span>GitHub</span>
+                      <span>VS Code</span>
+                      <span>Microsoft Office</span>
+
+                  </div>
+
+              </div>
+
+
+              <!-- Networking -->
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Networking
+                  </div>
+
+                  <div class="skill-tags">
+
+                      <span>Cisco Packet Tracer</span>
+                      <span>TCP/IP</span>
+                      <span>LAN Configuration</span>
+                      <span>Router & Switch Configuration</span>
+
+                  </div>
+
+              </div>
+
+
+              <!-- IT Support -->
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      IT Support
+                  </div>
+
+                  <div class="skill-tags">
+
+                      <span>PC Troubleshooting</span>
+                      <span>OS Installation</span>
+                      <span>Peripheral & CCTV Installation/Configuration</span>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+
+
+          <!-- =========================
+              PROFESSIONAL SKILLS
+          ========================== -->
+
+          <div class="skills-group professional-skills">
+
+              <h1 class="skills-title">
+                  professional skills
+              </h1>
+
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Problem Solving &amp; Analytical Thinking
+                  </div>
+
+              </div>
+
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Teamwork &amp; Communication
+                  </div>
+
+              </div>
+
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Time Management &amp; Organization
+                  </div>
+
+              </div>
+
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Adaptability &amp; Continuous Learning
+                  </div>
+
+              </div>
+
+
+              <div class="skill-row">
+
+                  <div class="skill-name">
+                      Attention to Detail &amp; Technical Documentation
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="contact-container">
+
+        <h1 class="contact-title">
+            let's connect!
+        </h1>
+
+
+        <div class="contact-box">
+
+            <!-- EMAIL -->
+
+            <a
+                href="mailto:adelinejoliegomez@gmail.com"
+                class="contact-item">
+
+                <i class="bi bi-envelope contact-icon"></i>
+
+                <span>
+                    adelinejoliegomez@gmail.com
+                </span>
+
+            </a>
+
+
+            <!-- LINKEDIN -->
+
+            <a
+                href="YOUR_LINKEDIN_URL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item">
+
+                <i class="bi bi-linkedin contact-icon"></i>
+
+                <span>
+                    Adeline Jolie Gomez | LinkedIn
+                </span>
+
+            </a>
+
+
+            <!-- PHONE -->
+
+            <a
+                href="tel:+639673521640"
+                class="contact-item">
+
+                <i class="bi bi-telephone contact-icon"></i>
+
+                <span>
+                    +63 967 352 1640
+                </span>
+
+            </a>
+
+
+            <!-- LOCATION -->
+
+            <a
+                href="https://www.google.com/maps/search/Philippines"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item">
+
+                <i class="bi bi-geo-alt contact-icon"></i>
+
+                <span>
+                    Philippines
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+
+            Copyright • 2026 Adeline Jolie Gomez.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</section>
+
   <script src="js/script.js"></script>
+  <script src="js/project-details.js"></script>
 </body>
 </html>
