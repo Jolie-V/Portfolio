@@ -94,9 +94,6 @@ const projects = {
         technologies:
             "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, Figma, GitHub",
 
-        live:
-            "YOUR_SHOPFOOTAS_URL"
-
     }
 
 };
