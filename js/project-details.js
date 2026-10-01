@@ -64,9 +64,6 @@ const projects = {
         technologies:
             "PHP, PostgreSQL, JavaScript, Tailwind CSS, QR Code, HTML, CSS",
 
-        live:
-            "YOUR_DOCUTRACK_URL"
-
     },
 
 
@@ -181,11 +178,18 @@ if (project) {
         project.technologies;
 
 
-    document.getElementById(
-        'project-live-link'
-    ).href =
-        project.live;
-
+   const liveLink =
+       document.getElementById('project-live-link');
+   
+   if (project.live) {
+   
+       liveLink.href = project.live;
+   
+   } else {
+   
+       liveLink.style.display = 'none';
+   
+   }
 
     /* Create technology tags */
 
