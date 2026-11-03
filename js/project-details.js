@@ -66,22 +66,13 @@ const projects = {
 
     },
 
-
-    origato: {
-
-        title:
-            "Origato",
-
-        image:
-            "",
-
 origato: {
 
     title:
         "Origato",
 
     image:
-        "assets/images/origato/1.png",
+        "assets/images/origato.jpg",
 
     stack: [
         "PHP",
@@ -97,7 +88,7 @@ origato: {
         "Origato provides a convenient online shopping platform for businesses, featuring organized product catalogs, database-driven product information, and e-commerce functionality designed to simplify the procurement process.",
 
     role:
-        "Web Developer",
+        "Backend Developer",
 
     technologies:
         "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap",
