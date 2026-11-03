@@ -94,6 +94,7 @@ origato: {
         "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap",
    live:
             "https://origato-shop.freedev.app/"
+}
 
 },
 
