@@ -67,36 +67,44 @@ const projects = {
     },
 
 
-    shopfootas: {
+    origato: {
 
         title:
-            "ShopFootas",
+            "Origato",
 
         image:
             "",
 
-        stack: [
-            "PHP",
-            "MySQL",
-            "JavaScript",
-            "Bootstrap"
-        ],
+origato: {
 
-        description:
-            "An e-commerce web application developed as an academic project for browsing and purchasing shoes.",
+    title:
+        "Origato",
 
-        overview:
-            "ShopFootas provides an online shopping experience with database-driven product information and e-commerce functionality.",
+    image:
+        "assets/images/origato/1.png",
 
-        role:
-            "Project Manager & Lead Backend Developer",
+    stack: [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Bootstrap"
+    ],
 
-        technologies:
-            "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, Figma, GitHub",
+    description:
+        "A B2B e-commerce web application developed to streamline the browsing and purchasing of art materials and supplies for business customers.",
 
-    }
+    overview:
+        "Origato provides a convenient online shopping platform for businesses, featuring organized product catalogs, database-driven product information, and e-commerce functionality designed to simplify the procurement process.",
 
-};
+    role:
+        "Web Developer",
+
+    technologies:
+        "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap",
+
+},
+
+
 
 
 /* =========================================================
