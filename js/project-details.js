@@ -96,7 +96,7 @@ origato: {
             "https://origato-shop.freedev.app/"
 }
 
-},
+};
 
 
 
